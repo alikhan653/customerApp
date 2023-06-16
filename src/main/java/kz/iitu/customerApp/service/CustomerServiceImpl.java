@@ -1,2 +1,37 @@
-package kz.iitu.customerApp.service;public class CustomerServiceImpl {
+package kz.iitu.customerApp.service;
+
+import kz.iitu.customerApp.model.Customer;
+import kz.iitu.customerApp.repository.CustomerRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Slf4j
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+    @Autowired
+    CustomerRepository customerRepository;
+
+    @Override
+    public Customer getById(Long id) {
+        return null;
+    }
+
+    @Override
+    public void save(Customer customer) {
+
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
+
+    @Override
+    public List<Customer> getAll() {
+        return null;
+    }
 }
